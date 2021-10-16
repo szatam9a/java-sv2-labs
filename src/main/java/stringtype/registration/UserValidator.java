@@ -9,9 +9,9 @@ public class UserValidator {
     }
     public boolean isValidEmail(String email){
         int insidetest = email.indexOf("@",1);
-        System.out.println(insidetest);
+        //System.out.println(insidetest);
         int dottest = email.indexOf(".", insidetest+2);
-        System.out.println(dottest);
+        //System.out.println(dottest);
 
 
         return (insidetest!=-1) && (dottest!=-1);

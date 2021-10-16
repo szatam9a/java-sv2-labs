@@ -7,9 +7,9 @@ public class Registration {
         System.out.println("email");
         String email = scanner.nextLine();
         System.out.println(validator.isValidEmail(email)? "good":"bad");
-        //System.out.println("jelszó");
+        System.out.println("jelszó");
         String password = scanner.nextLine();
-        //System.out.println("jelszó újra");
+        System.out.println("jelszó újra");
         String passwordagain = scanner.nextLine();
         System.out.println(validator.isValidPassword(password,passwordagain)? "good":"bad");
 
