@@ -1,6 +1,6 @@
 package classstructureio;
 import java.util.Scanner;
-public class registration {
+public class Registration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String userEmail;
