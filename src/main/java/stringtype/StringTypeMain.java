@@ -23,9 +23,12 @@ public class StringTypeMain {
         String s3 = s1+s2;
         System.out.println(s3);
         System.out.println(s3.length());
+
         String testme = "Abcde";
         System.out.println(testme.length());
-
+        //System.out.println(testme.substring(0,3) );
+        System.out.println(testme.substring(0,1)+"," + testme.substring(2,3));
+        System.out.println(testme.substring(0,3));
     }
 
 }
