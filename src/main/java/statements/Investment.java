@@ -30,7 +30,7 @@ public class Investment {
             active= false;
             return ((getYield(days)+fund)-((getYield(days)+fund)*cost*0.01));
         }
-    
+
     }
     public double closeT (int days){
         double money;
