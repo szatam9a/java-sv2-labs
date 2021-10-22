@@ -9,14 +9,14 @@ public class BoatRental {
     private int occupiedBoatCounter;
 
     public void freeBoats (){
-        System.out.println("szabad hajók száma: "+ (3-occupiedBoatCounter));
-        if (isSpaceFiveOccupied==false) System.out.println("5Fős csonak még szabad");
-            else System.out.println("5Fős csonak mar nem szabad");
-        if (isSpaceThreeOccupied==false) System.out.println("3Fős csonak még szabad");
-            else System.out.println("3Fős csonak mar nem szabad");
-        if (isSpaceTwoOccupied==false) System.out.println("2Fős csonak még szabad");
-            else System.out.println("2Fős csonak mar nem szabad");
 
+        if (isSpaceFiveOccupied==false) System.out.println("5Fős csonak még szabad");
+            else System.out.println("5Fős csonak elfoglalva");
+        if (isSpaceThreeOccupied==false) System.out.println("3Fős csonak még szabad");
+            else System.out.println("3Fős csonak elfoglalva");
+        if (isSpaceTwoOccupied==false) System.out.println("2Fős csonak még szabad");
+            else System.out.println("2Fős csonak elfoglalva");
+        System.out.println("szabad hajók száma: "+ (3-occupiedBoatCounter));
 
     }
 
