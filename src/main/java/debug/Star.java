@@ -4,7 +4,7 @@ public class Star {
     public void writeStars(int[] numbers) {
              int prev = 0;
         for (int i = 0; i < numbers.length; i++) {
-           
+
             int stars = numbers[i] - prev;
             printStars(stars);
             prev = numbers[i];
