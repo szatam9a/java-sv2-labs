@@ -7,4 +7,15 @@ public enum SolarSystem {
     SolarSystem(int moons) {
         MOONS = moons;
     }
+
+    public int getMOONS() {
+        return MOONS;
+    }
+
+    @Override
+    public String toString() {
+        return "SolarSystem{" +
+                "MOONS=" + MOONS +
+                '}';
+    }
 }
