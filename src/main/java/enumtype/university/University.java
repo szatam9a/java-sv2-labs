@@ -11,4 +11,5 @@ public enum University {
     public String getName() {
         return name;
     }
+
 }
