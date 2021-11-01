@@ -11,8 +11,8 @@ public class University {
     }
 
     public boolean areEqual(Student student, Student anotherStudent){
-        if ((student.getStudentID()==anotherStudent.getStudentID()) &&
-                (student.getNeptunNumbers()==anotherStudent.getNeptunNumbers()) ){
+        if ((student.getStudentID().equals(anotherStudent.getStudentID())) &
+                (student.getNeptunNumbers().equals(anotherStudent.getNeptunNumbers()))){
             return true;
         }
     return false;}
