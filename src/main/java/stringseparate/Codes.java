@@ -11,13 +11,13 @@ public class Codes {
         StringBuilder sb = new StringBuilder();
         sb.append("Betűvel kezdődő kódok: ");
 
-        boolean dontputdot = true;
+        boolean dontPutDot = true;
 
         for (String actual : this.codes
         ) {
             if (Character.isAlphabetic(actual.charAt(0))) {
-                if (dontputdot) {
-                    dontputdot = !dontputdot;
+                if (dontPutDot) {
+                    dontPutDot = !dontPutDot;
                     sb.append(actual);
                 } else {
                     sb.append(", ");

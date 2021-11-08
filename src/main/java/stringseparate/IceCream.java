@@ -9,12 +9,12 @@ public class IceCream {
 
     public String discount() {
         StringBuilder sb = new StringBuilder();
-        boolean dontputdot = true;
+        boolean dontPutDot = true;
         sb.append("MA VAN: ");
         for (String actual : list
         ) {
-            if (dontputdot) {
-                dontputdot = !dontputdot;
+            if (dontPutDot) {
+                dontPutDot = !dontPutDot;
                 sb.append(actual);
             } else {
                 sb.append(", ");
