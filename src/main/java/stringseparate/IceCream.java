@@ -8,6 +8,7 @@ public class IceCream {
     private List<String> list = Arrays.asList("csoki", "vanília", "eper", "citrom", "puncs");
 
     public String discount() {
+
         StringBuilder sb = new StringBuilder();
         boolean dontPutDot = true;
         sb.append("MA VAN: ");

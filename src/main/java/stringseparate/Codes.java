@@ -31,5 +31,6 @@ public class Codes {
     public static void main(String[] args) {
         Codes codes = new Codes();
         System.out.println(codes.getCodesStartWithLetter(codes.codes));
+
     }
 }

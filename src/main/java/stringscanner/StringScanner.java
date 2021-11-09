@@ -2,6 +2,7 @@ package stringscanner;
 
 import java.util.Scanner;
 
+
 public class StringScanner {
     public static void main(String[] args) {
 
