@@ -13,6 +13,7 @@ public class ForbiddenSevens {
             number++;
         }
     }
+
     private boolean isThereAnySevenAndStop(int number){
         if ((Integer.toString(number).contains("7")) && (number%7 !=0)) {
             return false;
@@ -26,8 +27,7 @@ public class ForbiddenSevens {
         ForbiddenSevens forbiddenSevens = new ForbiddenSevens();
         Scanner scanner = new Scanner(System.in);
         System.out.println("give a number");
-        int number = scanner.nextInt();
-        forbiddenSevens.numbers(number);
+        forbiddenSevens.numbers(scanner.nextInt());
 
     }
 }
