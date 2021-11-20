@@ -9,7 +9,7 @@ public class ThreeArrays {
         int[] third = new int[first.length];
 
         for (int i = 0; i < first.length; i++) {
-            third[i] = first[i] / second[i]; // a második tömb eggyel kevesebb elemet tartalmaz
+            //third[i] = first[i] / second[i]; // a második tömb eggyel kevesebb elemet tartalmaz
             System.out.println(third[i]);
         }
 

@@ -9,7 +9,7 @@ public class Three {
         int[] third = new int[second.length];
 
         for (int i = 0; i < second.length; i++) {
-            third[i] = first[i] / second[i];  // second[7] nullával való osztás.
+            //third[i] = first[i] / second[i];  // second[7] nullával való osztás.
             System.out.println(third[i]);
         }
 
