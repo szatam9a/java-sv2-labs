@@ -34,7 +34,7 @@ public class Patient {
     }
 
     public static void main(String[] args) {
-        Patient firstPatient = new Patient("Kiss József", "sssssssss", 1954);
+        Patient firstPatient = new Patient("Kiss József", "123456789", 1954);
 
         System.out.println(firstPatient.getName());
         System.out.println(firstPatient.getSocialSecurityNumber());
