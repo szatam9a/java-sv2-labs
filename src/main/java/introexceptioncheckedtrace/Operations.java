@@ -13,7 +13,7 @@ public class Operations {
     public String getDailySchedule(List<String> list){
         StringBuilder metroCarNumbers = new StringBuilder();
         metroCarNumbers.append(LocalDate.now()).append(", ");
-        
+
         for (String car:list
              ) {
              if (car.charAt(0)=='2'){
