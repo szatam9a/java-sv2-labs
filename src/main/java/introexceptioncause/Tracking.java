@@ -7,6 +7,5 @@ public class Tracking {
         TrackPoints trackPoints = new TrackPoints();
         trackPoints.dataFiller();
         trackPoints.calculateAndWriteOutTheWalkAltitude();
-
     }
 }

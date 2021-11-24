@@ -12,6 +12,7 @@ public class TrackPoints {
     public void dataFiller() {
         splitDataAndFillInToHeights(readIn(Path.of("src/main/resources/tracking.csv")));
     }
+
     public List<String> readIn(Path path) {
         try {
             return Files.readAllLines(path);
