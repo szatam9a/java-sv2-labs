@@ -23,13 +23,13 @@ public class TrackPoints {
     }
 
     public void splitDataAndFillInToHeights(List<String> list) {
-        String[] tmp;
         for (String actual : list
         ) {
-            tmp = actual.split(";");
+            String[] tmp = actual.split(";");
             heights.add(Integer.parseInt(tmp[2]));
         }
     }
+
     public void calculateAndWriteOutTheWalkAltitude() {
         for (int i = 1; i < heights.size(); i++) {
             System.out.println(heights.get(i) - heights.get(i - 1));
