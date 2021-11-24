@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Operations {
     public List<String> readFile() throws IOException{
-        return Files.readAllLines(Path.of("src/main/java/introexceptioncheckedtrace/underground.txt"));
+        return Files.readAllLines(Path.of("src/main/resources/underground.txt"));
     }
     public String getDailySchedule(List<String> list){
         StringBuilder metroCarNumbers = new StringBuilder();

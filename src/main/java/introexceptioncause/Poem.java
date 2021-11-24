@@ -9,7 +9,7 @@ import java.util.List;
 public class Poem {
     public List<String> readIn(){
         try {
-            return Files.readAllLines(Path.of("src/main/java/introexceptioncause/poem.txt"));
+            return Files.readAllLines(Path.of("src/main/resources/poem.txt"));
         } catch (IOException e) {
             throw new IllegalStateException("Nincs file", e);
         }
