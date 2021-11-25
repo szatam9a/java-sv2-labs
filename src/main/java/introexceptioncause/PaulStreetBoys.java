@@ -8,7 +8,7 @@ import java.util.Locale;
 
 public class PaulStreetBoys {
     public List<String> readIn() throws IOException {
-        return Files.readAllLines(Path.of("src/main/resources/palutcaifiuk.txt"));
+        return Files.readAllLines(Path.of("src/main/resources/introexceptioncause/palutcaifiuk.txt"));
     }
     public void writeTheFileToConsole(List<String> names){
         for (String name:names

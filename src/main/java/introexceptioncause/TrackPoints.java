@@ -10,7 +10,7 @@ public class TrackPoints {
     public List<Integer> heights = new ArrayList<>();
 
     public void dataFiller() {
-        splitDataAndFillInToHeights(readIn(Path.of("src/main/resources/tracking.csv")));
+        splitDataAndFillInToHeights(readIn(Path.of("src/main/resources/introexceptioncause/tracking.csv")));
     }
 
     public List<String> readIn(Path path) {

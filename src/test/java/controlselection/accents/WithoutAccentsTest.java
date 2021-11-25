@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class WithoutAccentsTest {
     @Test
     void testWith() {
-        assertEquals('a', new WithoutAccents().removeAccent('á'));
         assertEquals('e', new WithoutAccents().removeAccent('é'));
     }
 

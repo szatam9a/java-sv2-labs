@@ -12,7 +12,7 @@ public class Holiday {
 
         try {
             List<String> list;
-            for (String s : list = Files.readAllLines(Paths.get("src/main/java/introexceptionreadfile/holiday.txt"))) {
+            for (String s : list = Files.readAllLines(Paths.get("src/main/resources/introexceptionreadfile/holiday.txt"))) {
                 System.out.println(s);
             }
         } catch (IOException ioe) {
@@ -21,7 +21,7 @@ public class Holiday {
 
         try {
             List<String> list;
-            for (String s : list = Files.readAllLines(Path.of("src/main/java/introexceptionreadfile/holiday.txt"))) {
+            for (String s : list = Files.readAllLines(Path.of("src/main/resources/introexceptionreadfile/holiday.txt"))) {
                 System.out.println(s);
             }
         } catch (IOException ioe) {
