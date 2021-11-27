@@ -25,4 +25,7 @@ public class Electricity {
         streets.add("Naspotály utca");
      }
 
+    public List<String> getStreets() {
+        return streets;
+    }
 }
