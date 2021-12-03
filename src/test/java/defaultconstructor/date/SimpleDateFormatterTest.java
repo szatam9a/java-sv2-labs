@@ -9,12 +9,12 @@ class SimpleDateFormatterTest {
     @Test
     void formatDateStringTest() {
         SimpleDateFormatter sdf = new SimpleDateFormatter();
-        assertEquals("10-12-1990", sdf.formatDateString(new SimpleDate().setDate(1990, 12, 10)));
+        assertEquals("1990-12-10", sdf.formatDateString(new SimpleDate().setDate(1990, 12, 10)));
     }
 
     @Test
     void formatDateStringByCountryCodeTest() {
         SimpleDateFormatter sdf = new SimpleDateFormatter();
-        assertEquals(10 - 12 - 1990, sdf.formatDateStringByCountryCode(CountryCode.EN, new SimpleDate().setDate(1990, 12, 10)));
+        assertEquals("10-12-1990", sdf.formatDateStringByCountryCode(CountryCode.EN, new SimpleDate().setDate(1990, 12, 10)));
     }
 }
