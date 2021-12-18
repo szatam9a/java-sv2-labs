@@ -1,9 +1,9 @@
 package inheritancemethods.cars;
 
 public class Car {
-    private  double fuelRate;
+    private double fuelRate;
     private double fuel;
-    private  double tankCapacity;
+    private double tankCapacity;
 
     public Car(double fuelRate, double fuel, double tankCapacity) {
         this.fuelRate = fuelRate;
@@ -11,17 +11,21 @@ public class Car {
         this.tankCapacity = tankCapacity;
     }
 
-    public void modifyFuelAmount(double fuel){}
-    public void drive(int km){
+    public void modifyFuelAmount(double fuel) {
+    }
+
+    public void drive(int km) {
         if (!isEnoughFuel(km)) {
             throw new IllegalArgumentException("Not enough fuel available!");
         }
         fuel -= km * fuelRate / 100;
     }
+
     private boolean isEnoughFuel(int distance) {
         return (fuel - distance * fuelRate / 100) >= 0.0;
     }
-    public double calculateRefillAmount(){
+
+    public double calculateRefillAmount() {
         return tankCapacity - fuel;
     }
 
