@@ -43,4 +43,19 @@ public abstract class Character {
         hitPoint-=diff;
     }
     abstract public void secondaryAttack(Character enemy);
+
+    public Point getPosition() {
+        return position;
+    }
+
+    public int getHitPoint() {
+        return hitPoint;
+    }
+
+    public Random getRandom() {
+        return random;
+    }
+    public int getMaxDamage(){
+        return MAX_DAMAGE;
+    }
 }
