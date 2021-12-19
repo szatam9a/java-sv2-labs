@@ -1,4 +1,4 @@
-package inheritanceconstructor.animals;
+package interfaces.animals;
 
 import java.util.List;
 

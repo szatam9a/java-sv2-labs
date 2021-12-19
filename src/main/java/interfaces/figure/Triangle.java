@@ -1,4 +1,4 @@
-package inheritanceconstructor.figure;
+package interfaces.figure;
 
 public class Triangle implements Area{
     private double lengthOfSide;

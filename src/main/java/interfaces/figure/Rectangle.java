@@ -1,4 +1,4 @@
-package inheritanceconstructor.figure;
+package interfaces.figure;
 
 public class Rectangle implements Area{
     private double sideA;

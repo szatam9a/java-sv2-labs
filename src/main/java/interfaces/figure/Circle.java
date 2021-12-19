@@ -1,4 +1,4 @@
-package inheritanceconstructor.figure;
+package interfaces.figure;
 
 public class Circle implements Area {
     private double radius;

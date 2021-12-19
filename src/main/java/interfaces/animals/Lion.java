@@ -1,4 +1,4 @@
-package inheritanceconstructor.animals;
+package interfaces.animals;
 
 public class Lion implements Animal{
 
