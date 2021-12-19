@@ -18,7 +18,7 @@ class VaccineTest {
     @BeforeEach
     void init(){
 
-        
+
         people.add(new Person("ok", 64,ChronicDisease.NO,Pregnancy.YES));
         people.add(new Person("ok", 66,ChronicDisease.YES,Pregnancy.NO));
         people.add(new Person("ok", 70,ChronicDisease.YES,Pregnancy.NO));
