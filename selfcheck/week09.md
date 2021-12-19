@@ -5,8 +5,8 @@ fogtok megismerkedni.
 
 ## Absztrakt osztályok és interfészek
 
-* [ ] [Interfészek videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593820-interfeszek)
-* [ ] Interfészek gyakorlati feladat
+* [x] [Interfészek videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593820-interfeszek)
+* [x] Interfészek gyakorlati feladat
 * [ ] [Interfészekkel kapcsolatos szabályok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593828-interfeszekkel-kapcsolatos-szabalyok)
 * [ ] Interfészekkel kapcsolatos szabályok gyakorlati feladat
 * [ ] [Dependency inversion videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/29593839-dependency-inversion)
@@ -33,11 +33,11 @@ fogtok megismerkedni.
 
 ## Konzultációk
 
-* [ ] 2021-12-06 konzultáció részvétel/videó
-* [ ] 2021-12-06 konzultáció gyakorlati feladat
-* [ ] 2021-12-07 konzultáció részvétel/videó
-* [ ] 2021-12-07 konzultáció gyakorlati feladat
-* [ ] 2021-12-09 konzultáció részvétel/videó
-* [ ] 2021-12-09 konzultáció gyakorlati feladat
-* [ ] 2021-12-10 konzultáció részvétel/videó
-* [ ] 2021-12-10 konzultáció gyakorlati feladat
+* [x] 2021-12-06 konzultáció részvétel/videó
+* [x] 2021-12-06 konzultáció gyakorlati feladat
+* [x] 2021-12-07 konzultáció részvétel/videó
+* [x] 2021-12-07 konzultáció gyakorlati feladat
+* [x] 2021-12-09 konzultáció részvétel/videó
+* [x] 2021-12-09 konzultáció gyakorlati feladat
+* [x] 2021-12-10 konzultáció részvétel/videó
+* [x] 2021-12-10 konzultáció gyakorlati feladat
