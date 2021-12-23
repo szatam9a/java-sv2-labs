@@ -44,10 +44,4 @@ public class FerryBoat extends Vehicle {
                 "car=" + car +
                 '}';
     }
-
-    public static void main(String[] args) {
-        FerryBoat fb = new FerryBoat(1);
-        fb.car= new Car(1,1);
-        System.out.println(fb);
-    }
 }
