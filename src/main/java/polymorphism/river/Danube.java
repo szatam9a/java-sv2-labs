@@ -21,6 +21,7 @@ public class Danube extends River {
         };
         Water water2 = new River("name", 1) {
         };
+        System.out.println(water2.getName());
 
         Water water3 = new Danube("ok", 1, (Arrays.asList(" ", "")));
         Danube water4 = new Danube("ok", 1, (Arrays.asList(" ", "")));
