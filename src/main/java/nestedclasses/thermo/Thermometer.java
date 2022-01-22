@@ -1,12 +1,12 @@
 package nestedclasses.thermo;
 
-public class ThermoMeter {
+public class Thermometer {
     private int temperature;
     private String roomsName;
 
     private ThermometerObserver watcher;
 
-    public ThermoMeter(String roomsName, int temperature) {
+    public Thermometer(String roomsName, int temperature) {
         this.roomsName = roomsName;
         this.temperature = temperature;
     }
@@ -24,10 +24,16 @@ public class ThermoMeter {
 
     public void setTemperature(int temperature) {
         this.temperature = temperature;
+        onTemperatureChanged();
     }
 
     public String getRoomsName() {
         return roomsName;
+    }
+
+    public void setWatcher(ThermometerObserver watcher) {
+        this.watcher = watcher;
+        onTemperatureChanged();
     }
 
     public ThermometerObserver getWatcher() {
