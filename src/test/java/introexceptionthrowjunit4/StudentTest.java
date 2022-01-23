@@ -1,10 +1,10 @@
 package introexceptionthrowjunit4;
 
 import org.junit.Rule;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.rules.ExpectedException;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
@@ -18,7 +18,7 @@ public class StudentTest {
         assertEquals(3, student.getListElement(0));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @org.junit.Test(expected = IllegalArgumentException.class)
     public void testAddNoteThrow() {
         student.addNote(6);
     }
