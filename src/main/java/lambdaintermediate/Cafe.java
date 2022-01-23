@@ -10,7 +10,7 @@ public class Cafe {
     public Integer getTotalIncome() {
         return orders
                 .stream()
-                .flatMap(l -> l.getCoffeeList()
+                .flatMap(l -> l.getCoffees()
                         .stream())
                 .mapToInt(e -> e.getPrice())
                 .sum();
@@ -18,10 +18,11 @@ public class Cafe {
 
     public Integer getTotalIncome(LocalDate date) {
         return orders
-                .stream().peek(System.out::println)
+                .stream()
                 .filter(e -> e.getDateTime()
-                        .equals(date)).peek(e-> System.out.println(e.getDateTime()))
-                .flatMap(y -> y.getCoffeeList()
+                        .toLocalDate()
+                        .equals(date))
+                .flatMap(y -> y.getCoffees()
                         .stream())
                 .mapToInt(e -> e.getPrice())
                 .sum();

@@ -4,20 +4,20 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class CoffeeOrder {
-    private List<Coffee> coffeeList ;
+    private List<Coffee> coffees;
     private LocalDateTime dateTime;
 
     public CoffeeOrder(List<Coffee> coffeeList, LocalDateTime dateTime) {
-        this.coffeeList = coffeeList;
+        this.coffees = coffeeList;
         this.dateTime = dateTime;
     }
 
-    public List<Coffee> getCoffeeList() {
-        return coffeeList;
+    public List<Coffee> getCoffees() {
+        return coffees;
     }
 
-    public void setCoffeeList(List<Coffee> coffeeList) {
-        this.coffeeList = coffeeList;
+    public void setCoffees(List<Coffee> coffees) {
+        this.coffees = coffees;
     }
 
     public LocalDateTime getDateTime() {
@@ -31,7 +31,7 @@ public class CoffeeOrder {
     @Override
     public String toString() {
         return "CoffeeOrder{" +
-                "coffeeList=" + coffeeList +
+                "coffeeList=" + coffees +
                 ", dateTime=" + dateTime +
                 '}';
     }
