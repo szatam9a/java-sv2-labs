@@ -68,4 +68,31 @@ class CafeTest {
 
         assertEquals(2600, cafe.getTotalIncome(localDate));
     }
+    @Test
+    void testGetNumberOfCoffee() {
+        Cafe cafe = new Cafe(orders);
+
+        assertEquals(7L, cafe.getNumberOfCoffee(CoffeeType.ESPRESSO));
+    }
+    @Test
+    void testGetOrdersAfter() {
+        Cafe cafe = new Cafe(orders);
+        LocalDate localDate = LocalDate.of(2018, 5, 4);
+        LocalTime localTime = LocalTime.of(10, 45);
+        LocalDateTime dateTime = LocalDateTime.of(localDate, localTime);
+
+        assertEquals(3, cafe.getOrdersAfter(dateTime).size());
+    }
+    @Test
+    void testGetFirstFiveOrder() {
+        Cafe cafe = new Cafe(orders);
+        LocalDate localDate = LocalDate.of(2018, 5, 3);
+        LocalTime localTime = LocalTime.of(9, 19);
+
+        List<CoffeeOrder> firstFiveOrder = cafe.getFirstFiveOrder(localDate);
+
+        assertEquals(5, firstFiveOrder.size());
+        assertEquals(LocalDateTime.of(localDate, localTime), firstFiveOrder.get(0).getDateTime());
+        assertEquals(2, firstFiveOrder.get(0).getCoffees().size());
+    }
 }
