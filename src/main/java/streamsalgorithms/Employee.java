@@ -31,10 +31,16 @@ public class Employee {
                 new Employee("Rontó Ralph", 1999)
         );
         //Összegezd az alkalmazottak születési éveit!
-        int sumBirthYears = list.stream().mapToInt(i -> i.yearOfBirth).sum();
+        int sumBirthYears = list
+                .stream()
+                .mapToInt(i -> i.yearOfBirth)
+                .sum();
         System.out.println(sumBirthYears);
         //Összegezd az alkalmazottak életkorát!
-        int sumAge = list.stream().mapToInt(i -> LocalDateTime.now().getYear() - i.yearOfBirth).sum();
+        int sumAge = list
+                .stream()
+                .mapToInt(i -> LocalDateTime.now().getYear() - i.yearOfBirth)
+                .sum();
         System.out.println(sumAge);
         //Add vissza streammel, hány alkalmazott van a listában!
         System.out.println(list.stream().count());
@@ -52,12 +58,16 @@ public class Employee {
         //Add vissza, hogy igaz-e, hogy minden alkalmazott 1980 előtt született-e?
         System.out.println(list.stream().allMatch(e -> e.yearOfBirth < 1980));
         //Add vissza egy listában az összes, 1990-nél korábban született alkalmazottat!
-        List<Employee> before1990 = list.stream()
+        List<Employee> before1990 = list
+                .stream()
                 .filter(e -> e.yearOfBirth < 1990)
                 .collect(Collectors.toList());
         System.out.println(before1990);
         //Add vissza egy listában az összes alkalmazott nevét!
-        List<String> names = list.stream().map(e -> e.name).collect(Collectors.toList());
+        List<String> names = list
+                .stream()
+                .map(e -> e.name)
+                .collect(Collectors.toList());
         System.out.println(names);
         //Az előző két feladat kombinációja: Add vissza egy listában az összes, 1990-nél korábban született alkalmazott nevét!
         System.out.println(list.stream().filter(e -> e.yearOfBirth < 1990).map(e -> e.name).collect(Collectors.toList()));
