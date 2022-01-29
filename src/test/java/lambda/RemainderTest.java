@@ -14,7 +14,6 @@ class RemainderTest {
         List<Integer> toTest = List.of(45, 13, 64, 51, 92, 33);
         List<Integer> control = List.of(0, 1, 1, 0, 2, 0);
         List<Integer> toWrite = remainder.changeNumbersToRemainders(toTest, 3);
-        System.out.println(toWrite);
         assertEquals(control, toWrite);
     }
 }

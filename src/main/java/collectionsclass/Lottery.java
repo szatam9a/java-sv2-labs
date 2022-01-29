@@ -30,7 +30,7 @@ public class Lottery {
     }
 
     private void validate(int ballsNumber, int lotteryType) {
-        if (ballsNumber >= lotteryType)
+        if (ballsNumber <= lotteryType)
             throw new IllegalArgumentException("There must be more balls than the winning numbers!");
     }
 }

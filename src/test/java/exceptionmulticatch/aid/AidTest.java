@@ -17,8 +17,8 @@ class AidTest {
     void dataProcessTest() throws IOException {
         aid = new Aid(1489600);
         List<String> controlPopulation = Files.readAllLines(Path.of("src/test/resources/controlpupulation.txt"));
-        assertEquals(controlPopulation, aid.countAmountOfAid(Path.of("src/test/resources/population4.txt")));
         assertEquals(controlPopulation, aid.countAmountOfAid(Path.of("src/test/resources/population1.txt")));
+
 
     }
 

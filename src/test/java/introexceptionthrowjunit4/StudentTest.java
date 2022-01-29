@@ -26,7 +26,7 @@ public class StudentTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    @Test
+    @org.junit.Test
     public void testAddNoteThrowRule() {
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage("Note must be between 1 and 5!");
