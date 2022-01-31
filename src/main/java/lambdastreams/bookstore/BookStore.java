@@ -12,7 +12,7 @@ public class BookStore {
     }
 
     public Integer getNumberOfBooks() {
-        return (int) books.stream().mapToInt(e -> e.getPieces()).sum();
+        return books.stream().mapToInt(e -> e.getPieces()).sum();
     }
 
     public Optional<Book> findNewestBook() {
