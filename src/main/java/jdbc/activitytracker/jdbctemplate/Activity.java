@@ -1,7 +1,6 @@
 package jdbc.activitytracker.jdbctemplate;
 
 import jdbc.activitytracker.TrackPoint;
-import jdbc.activitytracker.Type;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,7 +9,7 @@ public class Activity {
     private int id;
     private LocalDateTime startTime;
     private String description;
-    private Type type;
+    private jdbc.activitytracker.jdbctemplate.Type type;
     private List<TrackPoint> trackPoints;
 
     @Override
@@ -23,7 +22,7 @@ public class Activity {
                 '}';
     }
 
-    public Activity(int id, LocalDateTime startTime, String description, Type type) {
+    public Activity(int id, LocalDateTime startTime, String description, jdbc.activitytracker.jdbctemplate.Type type) {
         this.id = id;
         this.startTime = startTime;
         this.description = description;
@@ -42,7 +41,7 @@ public class Activity {
         this.description = description;
     }
 
-    public void setType(Type type) {
+    public void setType(jdbc.activitytracker.jdbctemplate.Type type) {
         this.type = type;
     }
 
@@ -58,7 +57,7 @@ public class Activity {
         return description;
     }
 
-    public Type getType() {
+    public jdbc.activitytracker.jdbctemplate.Type getType() {
         return type;
     }
 
